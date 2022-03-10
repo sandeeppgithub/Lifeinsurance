@@ -1,0 +1,5 @@
+package com.abc.cpservice.model;
+
+public class CustomerProduct {
+
+}

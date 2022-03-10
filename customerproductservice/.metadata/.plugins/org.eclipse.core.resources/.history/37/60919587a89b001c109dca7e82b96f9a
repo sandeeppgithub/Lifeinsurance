@@ -1,0 +1,12 @@
+package com.abc.cpservice.service;
+
+import com.abc.cpservice.model.Product;
+
+public class ProductService {
+
+	public Product getProductDetails(int productId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

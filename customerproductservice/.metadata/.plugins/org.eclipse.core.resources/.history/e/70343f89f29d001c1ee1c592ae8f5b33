@@ -1,0 +1,15 @@
+package com.abc.cpservice.service;
+
+import com.abc.cpservice.entity.CustomerProduct;
+import com.abc.cpservice.model.CustomerProductDetails;
+
+public interface CustomerProductService {
+	
+	public CustomerProduct saveCustomerProduct(CustomerProduct customerProduct);
+	
+	public CustomerProductDetails getOrderDetails(int customerProductIdDetails);
+
+	CustomerProduct getCustomerProductDetails(int customerProductId);
+
+
+}

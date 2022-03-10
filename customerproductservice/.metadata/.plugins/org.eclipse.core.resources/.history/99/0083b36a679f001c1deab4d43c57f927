@@ -1,0 +1,16 @@
+package com.abc.cpservice.service;
+
+import com.abc.cpservice.entity.CustomerProductEntity;
+
+
+
+public interface CustomerProductService {
+	
+	public CustomerProductEntity saveCustomerProduct(CustomerProductEntity customerProduct);
+	
+	
+
+	public CustomerProductEntity getCustomerProductDetails(int customerProductId);
+
+
+}

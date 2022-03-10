@@ -1,0 +1,8 @@
+server.port:8087
+spring.datasource.url=jdbc:postgresql://localhost:5432/dbnsk
+spring.datasource.username=dbnskk
+spring.datasource.password=super123
+spring.jpa.hibernate.ddl-auto=create
+
+server.servlet.context-path=/customerproduct
+spring.mvc.pathmatch.matching-strategy=ant-path-matcher

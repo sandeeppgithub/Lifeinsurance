@@ -1,0 +1,57 @@
+package com.abc.cpservice.service;
+
+import java.util.Optional;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.stereotype.Service;
+
+import com.abc.cpservice.entity.CustomerProduct;
+import com.abc.cpservice.exceptionhandling.ResourceNotFoundException;
+import com.abc.cpservice.model.Customer;
+import com.abc.cpservice.model.Product;
+import com.abc.cpservice.repository.CustomerProductRepository;
+
+
+@Service
+public class CustomerProductServiceImpl implements CustomerProductService {
+
+	@Autowired
+	private CustomerProductRepository customerProductRepository;
+	
+//	@Autowired
+//	private ProductService productService;
+//	
+	@Autowired
+	private CustomerService customerService;
+
+	@Override
+	public CustomerProduct saveCustomerProduct(CustomerProduct customerProduct) {
+//		int productId = customerProduct.getCustomerId();
+//        Product product = productService.getProductDetails(productId);
+//        
+         int customerId = customerProduct.getCustomerId();
+         Customer customer = customerService.getCustomerDetails(customerId);
+         if(customer.equals(customerId)) {
+        	 CustomerProduct savedProduct=customerProductRepository.save(customerProduct);
+     		return savedProduct;
+        	 
+         }
+         throw new ResourceNotFoundException("customer not found with customerId :"+customerId);
+        
+	}
+
+	@Override
+	public CustomerProduct getCustomerProductDetails(int customerProductId) {
+		Optional<CustomerProduct> optionalOrder = customerProductRepository.findById(customerProductId);
+		if(optionalOrder.isEmpty()) {
+			throw new ResourceNotFoundException("Order not found with order id :"+customerProductId);
+		}
+		return optionalOrder.get();
+	}
+
+	
+
+
+}

@@ -1,0 +1,8 @@
+package com.abc.cpservice.controller;
+
+
+@RestController
+@RequestMapping("/")
+public class CustomerController {
+
+}

@@ -1,0 +1,49 @@
+package com.abc.cpservice.model;
+
+import com.abc.cpservice.entity.CustomerProduct;
+
+public class CustomerProductDetails {
+	
+	private CustomerProduct customerProduct;
+	
+	private Product product;
+	
+	private Customer customer;
+	
+	private Nominee nominee;
+
+	public CustomerProduct getCustomerProduct() {
+		return customerProduct;
+	}
+
+	public void setCustomerProduct(CustomerProduct customerProduct) {
+		this.customerProduct = customerProduct;
+	}
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Nominee getNominee() {
+		return nominee;
+	}
+
+	public void setNominee(Nominee nominee) {
+		this.nominee = nominee;
+	}
+	
+	
+
+}

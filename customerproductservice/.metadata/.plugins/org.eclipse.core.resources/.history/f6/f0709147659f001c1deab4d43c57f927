@@ -1,0 +1,14 @@
+package com.abc.cpserviceutil;
+
+import com.abc.cpservice.entity.CustomerProduct;
+
+public class Conversion {
+	
+	public static CustomerProduct modelToEntity() {
+		CustomerProduct customerProduct = new CustomerProduct();
+		customerProduct.setCustomerProductId(1);
+		return customerProduct;
+		
+	}
+
+}

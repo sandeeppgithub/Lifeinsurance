@@ -1,0 +1,5 @@
+package com.abc.cpservice.repository;
+
+public interface CustomerProductRepository extends JpaRepository<CustomerProduct,Integer> {
+
+}

@@ -1,0 +1,42 @@
+package com.abc.cpservice.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.abc.cpservice.entity.CustomerProduct;
+import com.abc.cpservice.model.Customer;
+import com.abc.cpservice.model.Product;
+import com.abc.cpservice.repository.CustomerProductRepository;
+
+@Service
+public class CustomerProductServiceImpl implements CustomerProductService {
+
+	@Autowired
+	private CustomerProductRepository orderRepository;
+	
+//	@Autowired
+//	private ProductService productService;
+//	
+//	@Autowired
+//	private CustomerService customerService;
+
+	@Override
+	public CustomerProduct saveCustomerProduct(CustomerProduct customerProduct) {
+//		int productId = customerProduct.getCustomerId();
+//        Product product = productService.getProductDetails(productId);
+//        
+//        int customerId = customerProduct.getCustomerId();
+//        Customer customer = customerService.getCustomerDetails(customerId);
+//        
+//        
+//        
+//        double totalPrice = product.getProductAmount(); 
+//        float orderPrice = (float) (totalPrice/product.getProductDuration());
+		 CustomerProduct savedProduct=orderRepository.save(customerProduct);
+        
+		return savedProduct;
+	}
+
+
+
+}

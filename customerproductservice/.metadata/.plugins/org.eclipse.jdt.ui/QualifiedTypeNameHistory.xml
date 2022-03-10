@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.netflix.hystrix.EnableHystrix"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
+    <fullyQualifiedTypeName name="com.abc.cpservice.model.CustomerProductDetails"/>
+    <fullyQualifiedTypeName name="com.google.common.base.Optional"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="com.abc.cpservice.repository.CustomerProductRepository"/>
+    <fullyQualifiedTypeName name="com.abc.cpservice.service.CustomerProductServiceImpl"/>
+    <fullyQualifiedTypeName name="com.abc.cpservice.service.CustomerProductService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="com.abc.cpservice.model.Customer"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="com.abc.cpservice.exceptionhandling.ResourceNotFoundException"/>
+    <fullyQualifiedTypeName name="com.abc.cpservice.entity.CustomerProduct"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+    <fullyQualifiedTypeName name="com.abc.cpservice.model.CustomerProduct"/>
+    <fullyQualifiedTypeName name="com.abc.cpserviceutil.Conversion"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.apache.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="com.abc.cpservice.exceptionhandling.OrderNotFoundException"/>
+</qualifiedTypeNameHistroy>

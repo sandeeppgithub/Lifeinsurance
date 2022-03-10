@@ -1,0 +1,91 @@
+package com.abc.cpservice.entity;
+
+import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "customerproduct_tbl")
+public class CustomerProduct {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "customer_productid")
+	private int customerProductId;
+
+	public int getCustomerProductId() {
+		return customerProductId;
+	}
+
+	public void setCustomerProductId(int customerProductId) {
+		this.customerProductId = customerProductId;
+	}
+	
+	
+
+	private int customerId;
+
+	private int productId;
+
+	private LocalDate dateOfMaturity;
+	
+	private int premiumType;
+
+	private double premiumMaount;
+
+	private int nomineeId;
+
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+
+	public LocalDate getDateOfMaturity() {
+		return dateOfMaturity;
+	}
+
+	public void setDateOfMaturity(LocalDate dateOfMaturity) {
+		this.dateOfMaturity = dateOfMaturity;
+	}
+
+	public double getPremiumMaount() {
+		return premiumMaount;
+	}
+
+	public void setPremiumMaount(double premiumMaount) {
+		this.premiumMaount = premiumMaount;
+	}
+
+	public int getNomineeId() {
+		return nomineeId;
+	}
+
+	public void setNomineeId(int nomineeId) {
+		this.nomineeId = nomineeId;
+	}
+
+	public int getPremiumType() {
+		return premiumType;
+	}
+
+	public void setPremiumType(int premiumType) {
+		this.premiumType = premiumType;
+	}
+
+}

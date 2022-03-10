@@ -1,0 +1,4 @@
+1646379023131	Rename type 'CustomerController'
+1646390916304	Rename type 'Customerservice'
+1646391404247	Encapsulate field 'premiumType'
+1646391848006	Encapsulate field 'productDuration'

@@ -1,0 +1,48 @@
+package com.abc.cpservice.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.abc.cpservice.entity.CustomerProductEntity;
+import com.abc.cpservice.exceptionhandling.ResourceNotFoundException;
+import com.abc.cpservice.model.CustomerProduct;
+import com.abc.cpservice.repository.CustomerProductRepository;
+import com.abc.cpserviceutil.Conversion;
+
+
+@Service
+public class CustomerProductServiceImpl implements CustomerProductService {
+
+	@Autowired
+	private CustomerProductRepository customerProductRepository;
+	
+	@Autowired
+	private Conversion conversion;
+	
+	
+
+	@Override
+	public CustomerProduct saveCustomerProduct(CustomerProduct customerProduct) {
+		
+         CustomerProductEntity savedProduct=customerProductRepository.save(conversion.modelToEntity(customerProduct));
+  		return conversion.entityToModel(savedProduct);
+  		
+		
+        
+	}
+
+	@Override
+	public CustomerProduct getCustomerProductDetails(int customerProductId) {
+		Optional<CustomerProductEntity> optionalOrder = customerProductRepository.findById(customerProductId);
+		if(optionalOrder.isEmpty()) {
+			throw new ResourceNotFoundException("CustomerProductDetails not found with CustomerProduct id :"+customerProductId);
+		}
+		return conversion.entityToModel(optionalOrder.get());
+	}
+
+	
+
+
+}

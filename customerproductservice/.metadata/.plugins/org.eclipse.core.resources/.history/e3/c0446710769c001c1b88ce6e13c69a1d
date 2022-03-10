@@ -1,0 +1,13 @@
+package com.abc.cpservice.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+import com.abc.cpservice.entity.CustomerProduct;
+
+
+public interface CustomerProductRepository extends JpaRepository<CustomerProduct , Integer> {
+
+	
+
+}

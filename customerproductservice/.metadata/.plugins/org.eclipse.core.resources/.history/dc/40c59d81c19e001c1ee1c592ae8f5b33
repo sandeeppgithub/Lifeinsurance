@@ -1,0 +1,10 @@
+spring.application.name=CustomerProduct
+server.port:8087
+spring.datasource.url=jdbc:postgresql://localhost:5432/dbnsk
+spring.datasource.username=dbnskk
+spring.datasource.password=super123
+spring.jpa.hibernate.ddl-auto=update
+
+management.endpoints.web.exposure.include=*
+
+server.servlet.context-path=/lifeinsurance

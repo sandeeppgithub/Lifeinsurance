@@ -1,0 +1,19 @@
+package com.abc.cpserviceutil;
+
+import com.abc.cpservice.entity.CustomerProductEntity;
+
+public class EnitityUtilModel {
+	
+	public static ProductEntity productModelToEntity(Product product) {
+
+		ProductEntity productEntity = new ProductEntity();
+		productEntity.setProductId(product.getProductId());
+		productEntity.setProductName(product.getProductName());
+		productEntity.setProductPrice(product.getProductPrice());
+		productEntity.setProductCategory(product.getProductCategory());
+		productEntity.setCreateOn(product.getCreateOn());
+
+		return productEntity;
+	}
+
+}
